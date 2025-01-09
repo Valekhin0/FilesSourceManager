@@ -1,19 +1,25 @@
 {
   "name": "files-source-manager",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "The library makes it easier to work with files and folders and helps ensure the existence of all resources used by the project.",
   "keywords": [
     "File",
     "File System"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "Valekhin0 valekhin.prof@gmail.com",
   "type": "commonjs",
   "main": "dist/init.js",
-  "files": ["dist"],
+  "files": [
+    "dist",
+    "!dist/**/*.spec.js",
+    "!dist/**/*.js.map",
+    "!dist/**/*.spec.js.map"
+  ],
+  "types": "./dist/types/init.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Valekhin0/FilesSourceManager"
+    "url": "git+https://github.com/Valekhin0/FilesSourceManager.git"
   },
   "scripts": {
     "build": "tsc",
