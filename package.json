@@ -12,7 +12,8 @@
   "main": "dist/init.js",
   "files": ["dist"],
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/Valekhin0/FilesSourceManager"
   },
   "scripts": {
     "build": "tsc",
