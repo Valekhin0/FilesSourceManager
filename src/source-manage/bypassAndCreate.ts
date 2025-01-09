@@ -3,11 +3,12 @@ import { existsSync, mkdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
 export function bypassAndCreate(tree: Node) {
+    const overDir = join(tree.toString(), '..');
+    if (!existsSync(overDir)) mkdirSync(overDir, { recursive: true });
+
     const currentDirObj: ICurrentDir = {
         currentDir: '',
     };
-
-    mkdirSync(join(tree.toString(), '..'), { recursive: true });
     _bypassAndCreate(currentDirObj, tree);
 }
 

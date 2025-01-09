@@ -5,7 +5,7 @@ import { init } from './init';
 describe('init test', () => {
     it('init is ok', () => {
         const config = {
-            directory: 'tests/a',
+            directory: 'D:/tests/a',
             content: {
                 fold: {
                     file: 'file.ts',

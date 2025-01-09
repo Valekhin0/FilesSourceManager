@@ -7,6 +7,7 @@ import { join } from 'path';
 
 export function init(config: object) {
     try {
+        (<any>config).directory = join((<any>config).directory, '');
         const dir: string = (<any>config).directory;
         mkdirSync(dir, { recursive: true });
 
