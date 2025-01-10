@@ -1,4 +1,4 @@
-import { mkdirSync } from 'fs';
+import { mkdirSync, existsSync } from 'fs';
 import { SourceManagerError } from './error';
 import { Node, NodeType } from './tree/node';
 import { parse } from './tree/parseObject';
@@ -9,7 +9,7 @@ export function init(config: object) {
     try {
         (<any>config).directory = join((<any>config).directory, '');
         const dir: string = (<any>config).directory;
-        mkdirSync(dir, { recursive: true });
+        if (existsSync(dir)) mkdirSync(dir, { recursive: true });
 
         if (typeof (<any>config).content === 'object') {
             const node = new Node(dir, NodeType.folder);

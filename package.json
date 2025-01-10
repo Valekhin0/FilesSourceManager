@@ -1,6 +1,6 @@
 {
-  "name": "files-source-manager-test",
-  "version": "0.1.3",
+  "name": "files-source-manager",
+  "version": "0.1.5",
   "description": "The library makes it easier to work with files and folders and helps ensure the existence of all resources used by the project.",
   "keywords": [
     "File",
@@ -13,8 +13,7 @@
   "files": [
     "dist",
     "!dist/**/*.spec.js",
-    "!dist/**/*.js.map",
-    "!dist/**/*.spec.js.map"
+    "!dist/**/*.js.map"
   ],
   "types": "./dist/types/init.d.ts",
   "repository": {
