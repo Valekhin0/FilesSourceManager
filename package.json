@@ -1,6 +1,6 @@
 {
   "name": "files-source-manager",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "The library makes it easier to work with files and folders and helps ensure the existence of all resources used by the project.",
   "keywords": [
     "File",
