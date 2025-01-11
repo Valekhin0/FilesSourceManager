@@ -38,7 +38,7 @@ D:/projects/project1/dist/
 > [!WARNING]
 > You cannot use `_name`, `_type`, and `_parent` as folder or file names, as this will result in a `SourceManagerError` error. However, if you add a few letters to them or, for example, a file extension, > then there will be no error.
 ### Directory manipulation
-After calling the "init()" function, you can conveniently access the created directories:
+After calling the `init()` function, you can conveniently access the created directories:
 ```ts
 init(config);
 console.log(config.content.project1.src.abc.toString());
@@ -51,7 +51,7 @@ Console log:
 > The `toString()` method is used here only because `console.log()` turns everything into JSON. The idea is that `config.content.project1.src.abc` will convert itself to a string, but to avoid errors,
 > it's better to use `toString()`.
 
-If you want to access directories in a similar way in other modules of your program, then you must output the "config" declaration to a separate module.
+If you want to access directories in a similar way in other modules of your program, then you must output the `config` declaration to a separate module.
 config.ts
 ```ts
 export default {
