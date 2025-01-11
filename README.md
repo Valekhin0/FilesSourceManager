@@ -52,6 +52,7 @@ Console log:
 > it's better to use `toString()`.
 
 If you want to access directories in a similar way in other modules of your program, then you must output the `config` declaration to a separate module.
+
 config.ts
 ```ts
 export default {
